@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="Description" content="Assignment WK2">
+
+  <meta name="Keywords" content="Best Places to visit in San Diego, Things to do in San Diego ">
+
+  <meta name="Author" content="Jerry Nnabude">
+
+  <link rel="stylesheet" type="text/css" href="JN.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <script src="JN4.js"></script>
+
+  <title> EXPLORING SAN DIEGO </title>
+
+</head>
+
+<body>
+
+  <header>
+
+    <h1 class="animate__animated animate__pulse"> JN TRAVEL GUIDE </h1>
+
+  </header>
+  <br>
+  <main>
+
+    <nav class="nav">
+      <ul class="ul">
+        <li><a href="NnabudeJerryAssignment.html">HOME</a></li>
+        <li><a href="AttractionsAssignment.html">ATTRACTIONS</a></li>
+        <li><a href="HiddenGem.html">HIDDEN GEMS </a></li>
+        <li><a href="Infos.html">USEFUL TIPS </a></li>
+        <li class="active"><a href="ContactSubscribe.html">FORMS</a></li>
+      </ul>
+    </nav>
+
+    <article>
+      <div class="box1">
+        <h2 class="animate__animated animate__bounce"> FINDING PERFECT LOCATION FOR YOU IN SD! </h2>
+      </div>
+
+
+
+      <section>
+
+        <h3 class="animate__animated animate__pulse"> Please fill the form...! </h3>
+        <form autocomplete="on" action="/action_page.php">
+          <fieldset>
+            <legend>Personal Information:</legend>
+            <label for="titles">Title:</label>
+            <select id="titles">
+              <option value="Mr.">Mr.</option>
+              <option value="Mrs.">Mrs.</option>
+              <option value="Ms.">Ms.</option>
+
+            </select>
+            <br><br>
+            First Name:<input required type="text" name="firstname">
+            <br><br>
+            Last Name: <input required type="text" name="lastname">
+            <br><br>
+            Date of Birth: <input required type="date" name="dob">
+            <br><br>
+            Email: <input required type="email" pattern="^.+@.+$" name="email">
+            <br><br>
+            Phone Number: <input required type="tel" name="phonenumber" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+            <br><br>
+            <button class="button2" type="submit" formaction="http://jytravel.com/process.pl">Save</button>
+
+            <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data">
+            <p>Note: Submit as Multipart/form-data: Your information will be encoded when submitted.</p>
+
+          </fieldset>
+          <br><br>
+          <fieldset>
+            <legend> ID verification: </legend>
+            <label for="idverify">Upload a document for verification:</label>
+            <input required type="file" id="idverify" name="idverify[]" multiple>
+            <output id="idverify2"></output>
+
+          </fieldset>
+
+
+          <br><br>
+          <fieldset>
+            <legend>Travel Information:</legend>
+            Start Date: <input required type="date" name="d1">
+            <br><br>
+            End Date: <input required type="date" name="d2">
+            <br><br>
+            Number of visitors: <input type="range" name="visitor" id="range_visitor" value="5" min="1" max="100"
+              oninput="range_visitor_disp.value = range_visitor.value">
+            <output id="range_visitor_disp"></output>
+            <br>
+          </fieldset>
+
+
+          <h3 class="animate__animated animate__pulse"> Please make your preferences! </h3>
+          <fieldset>
+            <legend>What do you want to see out of your window?</legend>
+            <div>
+              <input type="radio" id="Seaview" name="view" value="Seaview">
+              <label for="Seaview">Sea View</label>
+            </div>
+
+            <div>
+              <input type="radio" id="Mountainview" name="view" value="Mountainview">
+              <label for="Mountainview">Mountain view</label>
+            </div>
+
+            <div>
+              <input type="radio" id="Fieldview" name="view" value="Fieldview">
+              <label for="Fieldview">Trees and Fields </label>
+            </div>
+
+            <div>
+              <input type="radio" id="City" name="view" value="City">
+              <label for="City">City</label>
+            </div>
+          </fieldset>
+
+          <br> <br>
+          <fieldset>
+            <legend>What time of year would you prefer to visit? </legend>
+            <div>
+              <input type="radio" id="Wintertime" name="season1" value="Wintertime" checked>
+              <label for="Wintertime">Winter time</label>
+            </div>
+
+            <div>
+              <input type="radio" id="Summertime" name="season2" value="Summertime">
+              <label for="Summertime">Summer time</label>
+            </div>
+
+            <div>
+              <input type="radio" id="Springtime" name="season3" value="Springtime">
+              <label for="Springtime">Spring time</label>
+            </div>
+
+
+            <div>
+              <input type="radio" id="Autumntime" name="season4" value="Autumntime">
+              <label for="Autumntime">Autumn time</label>
+            </div>
+
+
+          </fieldset>
+
+          <br> <br>
+          <fieldset>
+            <legend>Which of these activities do you prefer?
+            </legend>
+            <div>
+              <input type="checkbox" id="Watersports" name="Watersports" checked>
+              <label for="Watersports">Watersports</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="Cultural" name="Cultural">
+              <label for="Cultural">Cultural</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="SunBeachSand" name="Sun Beach Sand">
+              <label for="SunBeachSand">Sun Beach Sand</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="LivelyNightlife" name="Lively Nightlife">
+              <label for="LivelyNightlife">Lively Nightlife</label>
+            </div>
+
+          </fieldset>
+          <br> <br>
+
+          <fieldset>
+            <legend> What is your age? </legend>
+            <select autofocus>
+              <option value="age1">16-29</option>
+              <option value="age2">30-40</option>
+              <option value="age3">40-60</option>
+              <option value="age4">60-100</option>
+            </select>
+
+          </fieldset>
+          <br> <br>
+
+          <fieldset>
+            <legend> Which link do you find more useful? </legend>
+            <label for="url">Enter an https:// URL:</label>
+
+            <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30"
+              required>
+          </fieldset>
+
+          <br> <br>
+          <fieldset>
+            <legend> Looking for more information? </legend>
+            <label for="Search">Search</label>
+            <input type="Search" value="Search" id="Search">
+          </fieldset>
+          <br> <br>
+
+
+          <textarea name="message">Any Questions? Please enter .....</textarea>
+          <br><br>
+
+          <button class="button2" type="submit">Submit</button>
+          <button class="button2" type="reset">Reset</button>
+
+        </form>
+
+
+      </section>
+
+
+    </article>
+
+    <aside>
+      <form>
+        <h3 class="animate__animated animate__pulse"> Sign Up & Subscribe </h3>
+
+        <fieldset>
+          <legend> Sign up and save:</legend>
+          <br>
+          <label for="subscribe">Please Enter Email adress:</label>
+          <input type="email" id="subscribe" pattern="^.+@.+$" placeholder="user@domain.com" size="30" required>
+
+          <p><input type="checkbox" required name="terms"> By signing up, I agree to receive email updates... <u>Terms
+              and Conditions</u></p>
+          <p><input type="submit"></p>
+
+
+
+        </fieldset>
+
+        <br><br>
+
+      </form>
+
+    </aside>
+
+  </main>
+  <footer class="box1">
+    <p id="textc">Author: 2023 Jerry Nnabude </p>
+  </footer>
+
+
+</body>
+
+</html>

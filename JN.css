@@ -1,0 +1,514 @@
+
+  body {
+    background-color: SteelBlue;
+    font-family: "Arial", Verdana, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: whitesmoke;
+  }
+
+
+  .center {
+    text-align: center;
+
+  }
+
+  header {
+    background-position: center;
+    background-image: url('LOGOJN.jpg');
+    display: flex;
+    height: 200px;
+    align-items: center;
+    justify-content: center;
+    color: MidnightBlue;
+    background-size: cover;
+    box-sizing: border-box;
+
+  }
+
+
+  p {
+    line-height: 30px;
+    /* space within paragraph */
+  }
+
+
+  h2 {
+    text-shadow: 3px 3px red;
+    letter-spacing: 5px;
+  }
+
+
+  /* navigation bar styling */
+  nav {
+    background-image: url("SS1.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0px;
+    margin: 0;
+    width: 150px;
+    position: fixed;
+    height: 100%;
+    text-align: left;
+    float: left;
+    list-style-type: none;
+    box-sizing: border-box;
+    display: flex;
+
+  }
+
+
+  .ul {
+    padding: 0px;
+    margin: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+    line-height: 45px;
+  }
+
+  ul {
+    line-height: 45px;
+  }
+
+
+  .nav li a {
+    display: block;
+    text-align: left;
+    padding: 14px 16px;
+    box-sizing: border-box;
+
+  }
+
+  .nav li a:hover {
+    background-color: moccasin;
+  }
+
+
+  .active {
+    background-color: Orange;
+  }
+
+
+  section,
+  aside {
+    padding-left: 180px;
+    box-sizing: border-box;
+  }
+
+  footer {
+    font-size: 90%;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+
+  /* height and width for videos */
+
+  video {
+    width: 390px;
+    height: 300px;
+    
+  }
+
+  /* container for navigation and footer with background image*/
+
+  .box1 {
+    background-position: center;
+    background-image: url("SS1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    box-sizing: border-box;
+    border: 1px solid orange;
+    margin: 0px;
+
+  }
+
+
+
+  #textc {
+    color: rgb(11, 11, 50);
+  }
+
+
+ 
+  div.gallery2 {
+    display: inline-grid;
+    grid-column:auto;
+    border: 1px solid orange;
+    margin: 10px;
+    padding: 7px;
+    border-radius: 5px;
+
+
+  }
+
+  div.gallery2:hover {
+    border: 1px solid coral;
+    opacity: 0.5;
+  }
+
+  div.gallery2 img {
+
+    width: 390px;
+    height: 300px;
+    
+  }
+
+
+
+  /* useful tips animation  */
+  .box3 {
+
+    animation-name: floating;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+  }
+
+
+
+  /* floating animation */
+  @keyframes floating {
+    0% {
+      transform: translate(0, 0px);
+    }
+
+    50% {
+      transform: translate(0, 25px);
+    }
+
+    100% {
+      transform: translate(0, -0px);
+    }
+  }
+
+
+
+
+  .button1 {
+    background-color: SandyBrown;
+    border: none;
+    border-radius: 12px;
+    color: rgb(2, 2, 51);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2px 2px;
+    cursor: pointer;
+    transition: width 2s;
+    animation-name: button1;
+    animation-duration: 4s;
+   
+  }
+
+
+  .button1:hover {
+    width: 20%;
+
+  }
+
+  /* general layout for buttons */
+  .button2 {
+    border: none;
+    color: rgb(2, 2, 51);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2px 2px;
+    cursor: pointer;
+    background-color: SandyBrown;
+    border-radius: 12px;
+  }
+
+  .button2:hover {
+    background-color: Moccasin;
+  }
+
+
+  .floatin {
+
+    animation-name: floating;
+    animation-iteration-count: 2;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+
+  }
+
+/* container for changing images with time  */
+  .box2 {
+    position: relative;
+    width: 900px;
+    height: 300px;
+    margin: 0px auto;
+    border: 2px solid orange;
+    border-radius: 5px;
+  }
+
+
+
+  /* changing images with time  */
+  .pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation-iteration-count: 2;
+    animation-duration: 12s;
+    animation-name: fade;
+  }
+
+  #pic1 {
+    animation-delay: 0s;
+
+  }
+
+  #pic2 {
+
+    animation-delay: 3s;
+  }
+
+  #pic3 {
+
+    animation-delay: 6s;
+  }
+
+  #pic4 {
+
+    animation-delay: 9s;
+  }
+
+
+  @keyframes fade {
+    0% {
+      opacity: 1;
+    }
+
+    45% {
+      opacity: 1;
+    }
+
+    55% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+
+
+
+  /* drag and drop container   */
+  #div1,
+  #div2 {
+
+    float: left;
+    width: 800px;
+    height: 400px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid orange;
+    border-radius: 5px;
+
+  }
+
+  /* drag and drop container image size   */
+  .img1 {
+    width: 300px;
+    height: 200px;
+
+  }
+
+  .img1:hover {
+    background-color: Moccasin;
+    opacity: 0.5;
+  }
+
+ 
+  /* For easy resizing and repositioning of a flexible container  */
+  .gridcontainer {
+   display: flex;
+   flex-direction: column;
+   margin: 10px;
+   padding: 7px;
+   flex-wrap: wrap;
+  
+  } 
+
+  .gridcontainer>div {
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid orange;
+    
+  }
+
+
+ 
+
+  /* form settings   */
+  fieldset {
+    border-style: dashed;
+    border-color: orange;
+
+  }
+
+  input[type=text],
+  select {
+    color: coral;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid orange;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=date],
+  select {
+    color: coral;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid orange;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=email],
+  select {
+    color: coral;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid orange;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=tel],
+  select {
+    color: coral;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid orange;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=url],
+  select {
+    color: coral;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid orange;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=Search],
+  select {
+    color: coral;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid orange;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    width: 100%;
+    background-color: sandybrown;
+    color: rgb(2, 2, 51);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+  input[type=submit]:hover {
+    background-color: rgb(247, 196, 151);
+  }
+
+  input[type="checkbox"]:required:invalid+label {
+    color: red;
+
+  }
+
+  input[type="checkbox"]:required:valid+label {
+    color: green;
+  }
+
+  textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-color: orange;
+    border-radius: 10px;
+    background-color: white;
+    resize: none;
+    color: coral;
+  }
+
+  input[type=file] {
+    width: 50%;
+    color: rgb(2, 2, 51);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: coral;
+    background-color: white;
+  }
+
+  input[type=range] {
+    width: 50%;
+    color: rgb(2, 2, 51);
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: coral;
+  }
+
+  input[type=checkbox] {
+
+    height: 25px;
+    width: 25px;
+    background-color: white;
+  }
+
+
+  input[type=radio] {
+    height: 25px;
+    width: 25px;
+
+  }
+
